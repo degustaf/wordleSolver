@@ -1,10 +1,10 @@
 name:                wordleSolver
 version:             0.1.0.0
-github:              githubuser/wordleSolver
-license:             BSD3
-author:              Author name here
-maintainer:          example@example.com
-copyright:           2022 Author name here
+github:              degustaf/wordleSolver
+license:             MIT
+author:              Derek Gustafson
+maintainer:          degustaf@gmail.com
+copyright:           2022 Derek Gustafson
 
 extra-source-files:
 - README.md
@@ -17,7 +17,7 @@ extra-source-files:
 # To avoid duplicated efforts in documentation and dealing with the
 # complications of embedding Haddock markup inside cabal files, it is
 # common to point users to the README.md file.
-description:         Please see the README on Github at <https://github.com/githubuser/wordleSolver#readme>
+description:         Please see the README on Github at <https://github.com/degustaf/wordleSolver#readme>
 
 dependencies:
 - base >= 4.11 && < 10
@@ -32,6 +32,45 @@ ghc-options:
 - -Wpartial-fields
 - -Wredundant-constraints
 
+default-extensions:
+- BangPatterns
+- BinaryLiterals
+- ConstraintKinds
+- DataKinds
+- DefaultSignatures
+- DeriveDataTypeable
+- DeriveFoldable
+- DeriveFunctor
+- DeriveGeneric
+- DeriveTraversable
+- DoAndIfThenElse
+- EmptyDataDecls
+- ExistentialQuantification
+- FlexibleContexts
+- FlexibleInstances
+- FunctionalDependencies
+- GADTs
+- GeneralizedNewtypeDeriving
+- InstanceSigs
+- KindSignatures
+- LambdaCase
+- MultiParamTypeClasses
+- MultiWayIf
+- NamedFieldPuns
+- NoImplicitPrelude
+- OverloadedStrings
+- PartialTypeSignatures
+- PatternGuards
+- PolyKinds
+- RankNTypes
+- RecordWildCards
+- ScopedTypeVariables
+- StandaloneDeriving
+- TupleSections
+- TypeFamilies
+- TypeSynonymInstances
+- ViewPatterns
+
 library:
   source-dirs: src
 
@@ -41,7 +80,6 @@ executables:
     source-dirs:         app
     dependencies:
     - wordleSolver
-    - optparse-simple
 
     ghc-options:
     - -threaded

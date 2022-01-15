@@ -4,29 +4,15 @@ module Main (main) where
 
 import Import
 import Run
-import RIO.Process
-import Options.Applicative.Simple
-import qualified Paths_wordleSolver
+-- import RIO.Process
+-- import Options.Applicative.Simple
+-- import qualified Paths_wordleSolver
 
 main :: IO ()
 main = do
-  (options, ()) <- simpleOptions
-    $(simpleVersion Paths_wordleSolver.version)
-    "Header for command line arguments"
-    "Program description, also for command line arguments"
-    (Options
-       <$> switch ( long "verbose"
-                 <> short 'v'
-                 <> help "Verbose output?"
-                  )
-    )
-    empty
-  lo <- logOptionsHandle stderr (optionsVerbose options)
-  pc <- mkDefaultProcessContext
+  lo <- logOptionsHandle stderr False
   withLogFunc lo $ \lf ->
     let app = App
           { appLogFunc = lf
-          , appProcessContext = pc
-          , appOptions = options
           }
      in runRIO app run

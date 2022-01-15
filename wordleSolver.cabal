@@ -6,13 +6,13 @@ cabal-version: 1.12
 
 name:           wordleSolver
 version:        0.1.0.0
-description:    Please see the README on Github at <https://github.com/githubuser/wordleSolver#readme>
-homepage:       https://github.com/githubuser/wordleSolver#readme
-bug-reports:    https://github.com/githubuser/wordleSolver/issues
-author:         Author name here
-maintainer:     example@example.com
-copyright:      2022 Author name here
-license:        BSD3
+description:    Please see the README on Github at <https://github.com/degustaf/wordleSolver#readme>
+homepage:       https://github.com/degustaf/wordleSolver#readme
+bug-reports:    https://github.com/degustaf/wordleSolver/issues
+author:         Derek Gustafson
+maintainer:     degustaf@gmail.com
+copyright:      2022 Derek Gustafson
+license:        MIT
 license-file:   LICENSE
 build-type:     Simple
 extra-source-files:
@@ -21,7 +21,7 @@ extra-source-files:
 
 source-repository head
   type: git
-  location: https://github.com/githubuser/wordleSolver
+  location: https://github.com/degustaf/wordleSolver
 
 library
   exposed-modules:
@@ -33,6 +33,44 @@ library
       Paths_wordleSolver
   hs-source-dirs:
       src
+  default-extensions:
+      BangPatterns
+      BinaryLiterals
+      ConstraintKinds
+      DataKinds
+      DefaultSignatures
+      DeriveDataTypeable
+      DeriveFoldable
+      DeriveFunctor
+      DeriveGeneric
+      DeriveTraversable
+      DoAndIfThenElse
+      EmptyDataDecls
+      ExistentialQuantification
+      FlexibleContexts
+      FlexibleInstances
+      FunctionalDependencies
+      GADTs
+      GeneralizedNewtypeDeriving
+      InstanceSigs
+      KindSignatures
+      LambdaCase
+      MultiParamTypeClasses
+      MultiWayIf
+      NamedFieldPuns
+      NoImplicitPrelude
+      OverloadedStrings
+      PartialTypeSignatures
+      PatternGuards
+      PolyKinds
+      RankNTypes
+      RecordWildCards
+      ScopedTypeVariables
+      StandaloneDeriving
+      TupleSections
+      TypeFamilies
+      TypeSynonymInstances
+      ViewPatterns
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wpartial-fields -Wredundant-constraints
   build-depends:
       base >=4.11 && <10
@@ -45,10 +83,47 @@ executable wordleSolver-exe
       Paths_wordleSolver
   hs-source-dirs:
       app
+  default-extensions:
+      BangPatterns
+      BinaryLiterals
+      ConstraintKinds
+      DataKinds
+      DefaultSignatures
+      DeriveDataTypeable
+      DeriveFoldable
+      DeriveFunctor
+      DeriveGeneric
+      DeriveTraversable
+      DoAndIfThenElse
+      EmptyDataDecls
+      ExistentialQuantification
+      FlexibleContexts
+      FlexibleInstances
+      FunctionalDependencies
+      GADTs
+      GeneralizedNewtypeDeriving
+      InstanceSigs
+      KindSignatures
+      LambdaCase
+      MultiParamTypeClasses
+      MultiWayIf
+      NamedFieldPuns
+      NoImplicitPrelude
+      OverloadedStrings
+      PartialTypeSignatures
+      PatternGuards
+      PolyKinds
+      RankNTypes
+      RecordWildCards
+      ScopedTypeVariables
+      StandaloneDeriving
+      TupleSections
+      TypeFamilies
+      TypeSynonymInstances
+      ViewPatterns
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.11 && <10
-    , optparse-simple
     , rio >=0.1.12.0
     , wordleSolver
   default-language: Haskell2010
@@ -61,6 +136,44 @@ test-suite wordleSolver-test
       Paths_wordleSolver
   hs-source-dirs:
       test
+  default-extensions:
+      BangPatterns
+      BinaryLiterals
+      ConstraintKinds
+      DataKinds
+      DefaultSignatures
+      DeriveDataTypeable
+      DeriveFoldable
+      DeriveFunctor
+      DeriveGeneric
+      DeriveTraversable
+      DoAndIfThenElse
+      EmptyDataDecls
+      ExistentialQuantification
+      FlexibleContexts
+      FlexibleInstances
+      FunctionalDependencies
+      GADTs
+      GeneralizedNewtypeDeriving
+      InstanceSigs
+      KindSignatures
+      LambdaCase
+      MultiParamTypeClasses
+      MultiWayIf
+      NamedFieldPuns
+      NoImplicitPrelude
+      OverloadedStrings
+      PartialTypeSignatures
+      PatternGuards
+      PolyKinds
+      RankNTypes
+      RecordWildCards
+      ScopedTypeVariables
+      StandaloneDeriving
+      TupleSections
+      TypeFamilies
+      TypeSynonymInstances
+      ViewPatterns
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.11 && <10
